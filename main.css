@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Varela', sans-serif;
+}
+
+body{
+    background: #111111;
+}
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player--container, .text--container{
+    background: linear-gradient(70deg, #07010a, #c9c9c9);
+    animation: gradient 10s infinite linear;
+    background-size: 400%;
+    border-radius: 30px;
+    width: 100%;
+    padding: 45px;
+    margin: 10px;
+}
+
+.player--container{
+    max-width: 380px;
+}
+
+.text--container{
+    width: 580px;
+}
+
+.text{
+    color: #ffffff;
+}
+
+.scroll{
+    height: 464px;
+    overflow-y: scroll;
+}
+
+.scroll::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 80% 0;
+    }
+    50% {
+        background-position: 20% 100%;
+    }
+    100% {
+        background-position: 80% 0;
+    }
+}
+
+.player--container .album--title{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 16px;
+    color: white;
+    text-align: left;
+    margin: 10px 0 5px;
+}
+
+.track--name{
+    color: white;
+}
+
+.album--pic{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.cover--img{
+    border-radius: 10px;
+    box-shadow: 0 0 15px 10px #464649;
+}
+
+.canvas{
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#canvas{
+    width: 100%;
+    height: 40px;
+    color: black;
+}
+
+.progress--container{
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 6px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.progress{
+    background-color: #3a3a3a;
+    border-radius: 5px;
+    height: 6px;
+    margin: 0 -1px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 184px;
+    width: 100%;
+    margin: 20px auto 0;
+}
+
+.btn{
+    cursor: pointer;
+}
+

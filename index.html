@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="player--container">
+        <div class="album--title">MY FAVORITES</div>
+        <div class="track--name"></div>
+        <div class="album--pic"><img class="cover--img" src="./trackImg/cover1.jpg" alt="cover"></div>
+
+        <audio class="audio" src="./tracks/When%20I%20Was%20Your%20Man.mp3" id="audio"></audio>
+        <canvas class="canvas" id="canvas"></canvas>
+
+        <div class="btn progress--container">
+            <div class="progress"></div>
+        </div>
+        <div class="buttons">
+            <div class="btn prev"><img src="./btn/prev.svg" alt="previous song"></div>
+            <div class="btn play"><img class="btn_change" src="./btn/play.svg" alt="play song"></div>
+            <div class="btn next"><img src="./btn/next.svg" alt="next song"></div>
+        </div>
+    </div>
+
+    <div class="text--container">
+        <div class="text scroll btn" id="text"></div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+<!--<script src="blockFunction.js"></script>-->
+
+</body>
+</html>
+
